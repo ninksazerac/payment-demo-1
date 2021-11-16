@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Concert</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar ข้างบน-->
+    <section>
+        <div class="w3-top">
+            <!--เวลาเลื่อนลงแถบจะตามตลอด-->
+            <div class="w3-bar w3-wide w3-padding">
+                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-white"><b>Ticket</b>Concert</a>
+
+                <div class="w3-right w3-hide-small">
+                    <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-blue">Home</a>
+                    <a href="#howto" class="w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-blue">How to</a>
+                    <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-text-white w3-hover-text-blue">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!--Navbar ข้างบน-->
+        <div class="container">
+            <div class="form-box">
+                <h2>Payment</h2>
+                <form id="form" class="form">
+                    <div class="input-field">
+                        <label for="">Full name</label>
+                        <input type="text" id="full_name" placeholder="Full name">
+                        <i class="fa " aria-hidden="true"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="">Email</label>
+                        <input type="text" id="email" placeholder="Email address">
+
+                        <i class="fa " aria-hidden="true"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="">Phone number</label>
+                        <input type="text" id="phone_number" placeholder="Phone number">
+                        <i class="fa " aria-hidden="true"></i>
+                        <span></span>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="">Payment xxxx-xxxx</label>
+                        <input type="url" id="slip" placeholder="Payment bill">
+                        <i class="fa " aria-hidden="true"></i>
+                        <span></span>
+                    </div>
+                </form>
+                <input type="submit" id="submit" value="Submit">
+                <div id="status"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
